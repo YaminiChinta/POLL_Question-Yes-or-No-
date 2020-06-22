@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>::Answer page::</title>
+</head>
+<body>
+	<div align="center" style="margin: 300px">
+	<form action="{% url 'answer' %}" method="POST">
+		{% csrf_token %}
+		<input type="text" name="name" placeholder="Enter Name"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+	</div>
+</body>
+</html>
